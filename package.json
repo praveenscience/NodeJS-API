@@ -1,0 +1,26 @@
+{
+  "name": "nodejsapi",
+  "version": "1.0.0",
+  "description": "This is a JSON API Server.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/praveenscience/NodeJS-API.git"
+  },
+  "keywords": [
+    "NodeJS",
+    "API",
+    "JavaScript",
+    "HelloWorld"
+  ],
+  "author": "Praveen Kumar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/praveenscience/NodeJS-API/issues"
+  },
+  "homepage": "https://github.com/praveenscience/NodeJS-API#readme"
+}
