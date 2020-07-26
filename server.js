@@ -5,14 +5,12 @@ const morgan = require("morgan");
 const app = express();
 // Define a port.
 const port = 3000;
+// Import all the routes.
+const root = require("./routes/root");
 
 // Add middleware.
 app.use(morgan("dev"));
-
-// Define routes!
-app.get("/", (req, res) => {
-  res.json(0.1 + 0.2);
-});
+app.use("/", root);
 
 // Listen to the port.
 app.listen(port, () => {
