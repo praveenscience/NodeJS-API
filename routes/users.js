@@ -23,5 +23,13 @@ app.post("/", (req, res) => {
     res.status(400).json("You need to have name parameter in body.");
   }
 });
+app.get("/:id", (req, res) => {
+  const id = req.params.id;
+  if (!!users[id]) {
+    res.json(users[id]);
+  } else {
+    res.status(404).json("User not found!");
+  }
+});
 
 module.exports = app;
