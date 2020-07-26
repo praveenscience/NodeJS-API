@@ -1,9 +1,13 @@
-// Import Express!
+// Import Express & Morgan!
 const express = require("express");
+const morgan = require("morgan");
 // Create an instance.
 const app = express();
 // Define a port.
 const port = 3000;
+
+// Add middleware.
+app.use(morgan("dev"));
 
 // Define routes!
 app.get("/", (req, res) => {
