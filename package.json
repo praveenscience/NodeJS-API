@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/praveenscience/NodeJS-API/issues"
   },
-  "homepage": "https://github.com/praveenscience/NodeJS-API#readme"
+  "homepage": "https://github.com/praveenscience/NodeJS-API#readme",
+  "dependencies": {
+    "nodemon": "^2.0.4"
+  }
 }
