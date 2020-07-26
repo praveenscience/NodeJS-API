@@ -7,10 +7,12 @@ const app = express();
 const port = 3000;
 // Import all the routes.
 const root = require("./routes/root");
+const users = require("./routes/users");
 
 // Add middleware.
 app.use(morgan("dev"));
 app.use("/", root);
+app.use("/users", users);
 
 // Listen to the port.
 app.listen(port, () => {
